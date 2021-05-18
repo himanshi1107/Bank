@@ -152,7 +152,6 @@
             <div class="overlay-content">
                 <a href="index.php" class="nav-link">Home</a>
                 <a href="userDetails.php" class="nav-link">Customers</a>
-                <!-- <a href="transferMoney.php" class="nav-link">Transfer Money</a> -->
                 <a href="transactionHistory.php" class="nav-link">Transaction History</a>
                 <a href="about.php" class="nav-link">About Us</a>
             </div>

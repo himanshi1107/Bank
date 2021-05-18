@@ -44,7 +44,10 @@ CREATE TABLE IF NOT EXISTS `transaction` (
 INSERT INTO `transaction` (`sno`, `sender`, `receiver`, `amount`, `datetime`) VALUES
 (1, 'Bhoomi Ghagre', 'Mansi Dharpure', '400', '2021-05-15 22:26:57'),
 (2, 'Reshma Bhagatkar', 'Sakshi Khapekar', '500', '2021-05-15 22:30:41'),
-(3, 'Bhoomi Ghagre', 'Nikhil Pawar', '100', '2021-05-16 14:12:10');
+(3, 'Bhoomi Ghagre', 'Nikhil Pawar', '100', '2021-05-16 14:12:10'),
+(4, 'Reshma Bhagatkar', 'Jyoti Jain', '1000', '2021-05-18 17:05:56'),
+(5, 'Sakshi Khapekar', 'Dhananjay Bobde', '1700', '2021-05-18 17:06:44');
+COMMIT;
 
 -- --------------------------------------------------------
 

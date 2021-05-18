@@ -28,7 +28,7 @@
                     <a class="btn" href="https://www.linkedin.com/in/himanshi-bobde-b311261b6/" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a class="btn" href="#" target="_blank">
+                    <a class="btn" href="https://github.com/himanshi1107/Basic_Banking_System" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                     <a class="btn" href="https://www.youtube.com/channel/UCtLpXwZvorCfqVwuNufVdfA" target="_blank">
@@ -44,8 +44,6 @@
             </div>
         </div>
     </div>
-    
-    <script src="js/script.js"></script>
 
 </body>
 </html>
