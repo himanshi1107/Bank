@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+}
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+/* Header part */
+
+header{
+	position:fixed;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	z-index: 10;
+	background-color: #000000;
+	padding: 12px 15px;
+}
+header .head{
+	-webkit-display: flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo a{
+	font-size: 35px;
+	text-decoration: none;
+	color: #cf125a;
+	font-weight: 700;
+	font-family: Lucida Bright,Georgia,serif; 
+    margin: 10px;
+}
+header .logo a span{
+	color: white;
+	font-family: Lucida Bright,Georgia,serif; 
+}
+.wavy{
+	position: relative;
+	-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0,2)) ;
+	font-family: 'Girassol', cursive;
+}
+.wavy span{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	font-family: 'Girassol', cursive;
+	font-size: 2em;
+	animation: animate 1s ease-in-out ;
+	animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate{
+	0%{
+		transform: translateY(0px);
+	}
+	20%{
+		transform: translateY(-20px);
+	}
+	40%,100%{
+		transform: translateY(0px);
+	}
+}
+/* main part */
+
+.home{
+    height: 100vh;
+	width: 100%;
+	background-image: url(../images/bg1.jpg);
+    background-size: cover;
+	padding:15px;
+	-webkit-display: flex;
+	display: flex;
+	position: fixed;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.home .container{
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 200px;
+}
+.home .container h1{
+	color: #eb0e45;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: Lucida Bright,Georgia,serif; 
+}
+.home .container h1 span{
+	color: white;
+	font-family: Lucida Bright,Georgia,serif; 
+}
+@media only screen and (max-width: 600px){
+	.home h1{
+		font-size: 40px;
+	}
+}
+#slide-left{
+    position: absolute;
+    left: -730px;
+	width: 100%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.7s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.7s;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+#slide-right{
+    position: absolute;
+    right: -1500px;
+	width: 100%;
+	margin-top: 80px;
+    -webkit-animation: slide1 0.5s forwards;
+    -webkit-animation-delay: 0.7s;
+    animation: slide1 0.5s forwards;
+    animation-delay: 0.7s;
+}
+
+@-webkit-keyframes slide1 {
+    100% { right: 0; }
+}
+
+@keyframes slide1 {
+    100% { right: 0; }
+}
+.container .logo{
+	-webkit-display: flex;
+  	display: flex;
+  	flex-direction: column;
+  	flex-grow: 1;
+	height: 600px;
+	width: 600px;
+  	margin-top: -100px;
+  	margin-left: 680px;
+}
+#logo{
+    position: absolute;
+    left: -1200px;
+    -webkit-animation: slide2 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide2 0.5s forwards;
+    animation-delay: 2s;
+}
+@-webkit-keyframes slide2 {
+    100% { left: 0; }
+}
+
+@keyframes slide2 {
+    100% { left: 0; }
+}
+
+/* footer part */
+
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9;
+    background-color: #000000;
+    padding: 10px 0px;
+}
+footer p{
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+}
+

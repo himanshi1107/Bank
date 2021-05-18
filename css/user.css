@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center-div {
+  width: 80%;
+  padding: 20px 0 0 0;
+  border-radius: 15px;
+  align-items: center;
+  margin-left: 10%;
+}
+h1 {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  padding: 16px 0 0 0;
+  font-family: "Goblin One", cursive;
+}
+table {
+  border-radius: 10px;
+}
+th,
+td {
+  font-family: "Source Serif Pro", serif;
+}
+th {
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 18px;
+}
+td {
+  font-size: 18px;
+  text-align: center;
+}
+.btn1 {
+  width: 110px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  outline: none;
+  text-align: center;
+  border: 2px solid white;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: transparent;
+  z-index: 1;
+}
+.btn1:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.btn1:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: grey;
+}
+.btn1:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
